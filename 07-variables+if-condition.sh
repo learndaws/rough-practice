@@ -11,7 +11,7 @@ password=hello
 if [ $username is admin];
 then
     echo "username is correct"
-else {
+else
     echo "username is incorrect"
 fi
 
