@@ -1,4 +1,6 @@
 #!\bin\bash
 
-echo "$(id centos)"
+command=id centos
+
+execute "$command"
 
