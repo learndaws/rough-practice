@@ -8,7 +8,7 @@ read -s password
 username=admin
 password=hello
 
-if [ $username is admin];
+if [ $username = admin];
 then
     echo "username is correct"
 else
