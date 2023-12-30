@@ -5,8 +5,8 @@ read -s username
 echo "PASSWORD:"
 read -s password
 
-$username=admin
-$password=hello
+username=admin
+password=hello
 
 if [ $username is admin];
 then
