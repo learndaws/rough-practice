@@ -8,19 +8,19 @@ echo "Enter PASSWORD:"
 
 read -s HELLO
 
-if [ $ADMIN == testadmin ];
+if [ $ADMIN != testadmin ];
     then 
-        echo "username is correct"
-    else
         echo "username is incorrect"
-        exit1
+        exit 1
+    else
+        echo "username is correct"
 fi 
 
-if [ $HELLO == testpassword ];
+if [ $HELLO != testpassword ];
     then 
-        echo "password is correct"
-    else
         echo "password is incorrect"
+    else
+        echo "password is correct"
 fi 
 
 
