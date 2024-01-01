@@ -2,7 +2,8 @@
 
 ROOTACCESSCHECK=$(id -u)
 
-INSTALL_1=$1
+INSTALL_4=$4
+INSTALL_5=$5
 
 EXIT_CHECK() 
 {
@@ -18,6 +19,10 @@ fi
 EXIT_CHECK "$ROOTACCESSCHECK" "FAILURE-1: you don't have root access" "SUCCESS-1: you have root access"
 
 
-yum install ${INSTALL_1} -y
+yum install ${INSTALL_4} -y
 
-EXIT_CHECK "$?" "FAILURE-2: Mysql installation is failed" "SUCCESS-2: Mysql installation is success"
+EXIT_CHECK "$?" "FAILURE-4: Mysql installation is failed" "SUCCESS-4: Mysql installation is success"
+
+yum install ${INSTALL_5} -y
+
+EXIT_CHECK "$?" "FAILURE-5: git installation is failed" "SUCCESS-5: git installation is success"
