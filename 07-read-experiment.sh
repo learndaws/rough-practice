@@ -8,9 +8,5 @@ echo "Enter PASSWORD:"
 
 read -s HELLO
 
-if [ ${ADMIN} -eq admin ];
-then
-echo "Correct Credentials"
-else
-echo "Incorrect Credentials"
-fi
+echo "$ADMIN"
+echo "$HELLO"
