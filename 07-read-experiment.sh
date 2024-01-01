@@ -8,5 +8,5 @@ echo "Enter PASSWORD:"
 
 read -s HELLO
 
-echo "${ADMIN}"
-echo "${HELLO}"
+echo "Entered username is "${ADMIN}""
+echo "Entered password is "${HELLO}""
