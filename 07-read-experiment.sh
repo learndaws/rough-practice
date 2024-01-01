@@ -13,6 +13,7 @@ if [ $ADMIN == testadmin ];
         echo "username is correct"
     else
         echo "username is incorrect"
+        exit1
 fi 
 
 if [ $HELLO == testpassword ];
