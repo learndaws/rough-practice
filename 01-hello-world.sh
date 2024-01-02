@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "Hello, this is a rough practice" 
+echo "Hello, I'm learning DAWS" 
