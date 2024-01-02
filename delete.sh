@@ -8,4 +8,4 @@ FUNCTION()
     done
 }
 
-FUNCTION "5"
+FUNCTION $1
