@@ -2,9 +2,9 @@
 
 FUNCTION()
 {
-    for ((PRINT_1TO5=1; PRINT_1TO5<=$1; PRINT_1TO5++))
+    for ((NUMBER=1; NUMBER<=$1; NUMBER++))
     do
-        echo "Number: ${PRINT_1TO5}"
+        echo "Number: ${NUMBER}"
     done
 }
 
