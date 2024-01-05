@@ -1,11 +1,20 @@
 #!/bin/bash
 
-id roboshop
+B="\e[30m"
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
 
-if [ $? = 0 ];
+VALIDATE_1()
+{
+if [ $1 != 0 ];
 then
-    useradd new-user
-    useradd hello-user
-else
-    echo "user in place"
+    $2
+    echo -e "${G} $3 ${N}"
 fi
+}
+
+cd /app
+
+VALIDATE_1 "$?" "mkdir /app" "${G} /app folder created ${N}"
