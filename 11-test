@@ -6,4 +6,6 @@ if [ $? != 0 ];
 then
     useradd roboshop
     echo -e "${G} username created ${N}"
+else
+    echo "user in place"
 fi
