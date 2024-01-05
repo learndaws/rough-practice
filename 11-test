@@ -1,0 +1,9 @@
+#!/bin/bash
+
+id roboshop
+
+if [ $? != 0 ];
+then
+    useradd roboshop
+    echo -e "${G} username created ${N}"
+fi
