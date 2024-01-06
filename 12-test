@@ -1,9 +1,14 @@
 #!/bin/bash
 
-# Check all conditions using a single if statement
-if [ "$1" -eq 1 ] && [ "$2" -eq 2 ] && [ "$3" -eq 6 ]; then
+# Check conditions using a single if statement with elif
+if [ "$1" -eq 1 ]; then
     echo "Hello"
+elif [ "$2" -eq 2 ]; then
     echo "Hey"
+elif [ "$3" -eq 6 ]; then
     echo "Goodbye"
+else
+    echo "No match found"
 fi
+
 
