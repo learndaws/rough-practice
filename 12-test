@@ -1,8 +1,8 @@
 #!/bin/bash
 
-if [ $1 -eq 1 ];
+if [ $1 -eq 1 ]  && [ $1 -eq  2 ];
 then
-    echo "It is one"
+    echo "It is one-two"
 else
-    echo "It is not one"
+    echo "It is others"
 fi
