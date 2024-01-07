@@ -12,4 +12,4 @@ while IFS=" " read -r IP_Address name equals FQDN
 do 
     echo  "$IP_Address $FQDN"
 
-done < /home/centos/rough-practice/second.log 
+done < /home/centos/rough-practice/first.log
