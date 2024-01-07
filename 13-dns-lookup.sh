@@ -5,7 +5,8 @@
 
 while IFS= read -r line
 do 
-    nslookup "$line" | awk '/in-addr.arpa/{ip=tolower($5); sub(/\.$/, "", ip)} /name/{name=tolower($2); sub(/\.$/, "", name)} END {print ip, name}' >> /home/centos/rough-practice/first.log 
+    result=$(nslookup "$line" | awk '/Name:/{name=$2} /Address:/{ip=$2} END{print ip, name}')
+    echo "$result" >> /home/centos/rough-practice/first.log
 done < 14-IP-Addresses
 
 # Print IP addresses and FQDNs
