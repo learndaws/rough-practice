@@ -10,6 +10,9 @@ done <<< $READ_FILE
 
 while IFS=" " read -r IP_Address name equals FQDN
 do 
-    echo  "$IP_Address $FQDN"
+    echo  "$IP_Address"
+    echo  "$name"
+    echo  "$equals"
+    echo  "$FQDN"
 
 done < /home/centos/rough-practice/first.log
