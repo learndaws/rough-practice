@@ -7,3 +7,9 @@ do
     nslookup $line | grep name &>> /home/centos/rough-practice/new.log 
 
 done <<< $READ_FILE
+
+while IFS=" " read -r IP_Address name equals FQDN
+do 
+    echo  "$IP_Address $FQDN"
+
+done < /home/centos/rough-practice/new.log 
