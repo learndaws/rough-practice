@@ -1,12 +1,16 @@
 #!/bin/bash
 
-> /home/centos/rough-practice/first.log
-
 READ_FILE=$(cat 14-IP-Addresses)
+
+# Clear the existing content of the log file
+> /home/centos/rough-practice/first.log
 
 while IFS= read -r line
 do 
-    nslookup "$line" | awk '/^Name:/ {name=$2} /^Address:/ {ip=$2} END {print ip, name}' >> /home/centos/rough-practice/first.log 
+    result=$(nslookup "$line" | grep -E "Name:|Address:" | awk '{print $2}')
+    IP_Address=$(echo "$result" | awk 'NR==1')
+    FQDN=$(echo "$result" | awk 'NR==2')
+    echo "$IP_Address $FQDN" >> /home/centos/rough-practice/first.log
 done <<< "$READ_FILE"
 
 # Print IP addresses and FQDNs
