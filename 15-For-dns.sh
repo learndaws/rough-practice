@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Below is a error program so don't trust
+
 READ_FILE=$(cat 14-IP-Addresses)
 echo "$READ_FILE"
 
