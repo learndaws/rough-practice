@@ -1,5 +1,7 @@
 #!/bin/bash
 
+> /home/centos/rough-practice/first.log
+
 READ_FILE=$(cat 14-IP-Addresses)
 
 while IFS= read -r line
