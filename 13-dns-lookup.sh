@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Clear the existing content of the log file
-> /home/centos/rough-practice/first.log
 
 while IFS= read -r line
 do 
