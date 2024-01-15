@@ -2,6 +2,5 @@
   hosts: localhost
   become: yes 
   tasks:
-  - name: just a play test message
     ansible.builtin.debug:
       msg: "Hello, this is PLAY-1 & TASK-1"
