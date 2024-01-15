@@ -1,0 +1,8 @@
+- name: Install a package
+  hosts: web
+  become: yes
+  tasks: 
+  - name: nginx install
+    ansibile.builtin.package:
+      name: nginx install
+      state: present
