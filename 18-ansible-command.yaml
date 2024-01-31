@@ -3,4 +3,4 @@
   become: yes 
   tasks:
   - name: command
-    command: "systemctl start postfix" ; "systemctl enable postfix"
+    command: "systemctl start postfix" "systemctl enable postfix"
