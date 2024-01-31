@@ -3,4 +3,4 @@
   become: yes 
   tasks:
   - name: command
-    command: sudo yum install postfix -y
+    command: systemctl start postfix ; systemctl enable postfix
