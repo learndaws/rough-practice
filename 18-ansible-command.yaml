@@ -1,0 +1,6 @@
+- name: software install
+  hosts: mongodb
+  become: yes 
+  tasks:
+  - name: command
+    command: sudo yum install postfix -y
