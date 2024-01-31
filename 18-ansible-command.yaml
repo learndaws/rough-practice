@@ -2,5 +2,8 @@
   hosts: mongodb
   become: yes 
   tasks:
-  - name: command
-    command: "systemctl start postfix" "systemctl enable postfix"
+  - name: command-1
+    command: systemctl start postfix
+
+  - name: command-2
+    command: systemctl enable postfix
